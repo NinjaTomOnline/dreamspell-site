@@ -28,6 +28,8 @@ Use this template in a separate public GitHub repository so the Dreamspell app c
 4. Set `Source` to `GitHub Actions`.
 5. Push to `main` and let the workflow deploy the site.
 
+If the first workflow run fails with a `Get Pages site failed` or `Not Found` error, revisit `Settings > Pages` and save `Source: GitHub Actions` once. GitHub's `configure-pages` action can auto-enable Pages only when you provide a token stronger than the default `GITHUB_TOKEN`, so first-time repo enablement often remains a manual one-time setup step.
+
 ## Later custom-domain swap
 
 When your final domain is ready:
@@ -38,4 +40,3 @@ When your final domain is ready:
 4. Enter the custom domain.
 5. Point the domain's DNS records at GitHub Pages.
 6. Turn on `Enforce HTTPS` after DNS propagation finishes.
-
