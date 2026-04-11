@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ninjatomonline.github.io/dreamspell-site/sitemap.xml

@@ -7,15 +7,30 @@ Use this template in a separate public GitHub repository so the Dreamspell app c
 - Repository name: `dreamspell-site`
 - GitHub Pages temporary URLs:
   - `https://ninjatomonline.github.io/dreamspell-site/`
+  - `https://ninjatomonline.github.io/dreamspell-site/guide.html`
+  - `https://ninjatomonline.github.io/dreamspell-site/glossary.html`
+  - `https://ninjatomonline.github.io/dreamspell-site/faq.html`
+  - `https://ninjatomonline.github.io/dreamspell-site/get-app.html`
+  - `https://ninjatomonline.github.io/dreamspell-site/updates.html`
   - `https://ninjatomonline.github.io/dreamspell-site/support.html`
   - `https://ninjatomonline.github.io/dreamspell-site/privacy.html`
 
 ## Contents this repo should contain
 
 - `index.html`
+- `guide.html`
+- `glossary.html`
+- `faq.html`
+- `get-app.html`
+- `updates.html`
 - `support.html`
 - `privacy.html`
+- `404.html`
 - `site.css`
+- `robots.txt`
+- `sitemap.xml`
+- `site.webmanifest`
+- favicon and touch icon PNGs
 - `screenshots/`
 - `.nojekyll`
 - `.github/workflows/publish-pages.yml`
