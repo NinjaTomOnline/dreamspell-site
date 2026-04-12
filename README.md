@@ -5,7 +5,16 @@ Use this template in a separate public GitHub repository so the Dreamspell app c
 ## Recommended repository
 
 - Repository name: `dreamspell-site`
-- GitHub Pages temporary URLs:
+- Production custom domain:
+  - `https://getdreamspell.com/`
+  - `https://getdreamspell.com/guide.html`
+  - `https://getdreamspell.com/glossary.html`
+  - `https://getdreamspell.com/faq.html`
+  - `https://getdreamspell.com/get-app.html`
+  - `https://getdreamspell.com/updates.html`
+  - `https://getdreamspell.com/support.html`
+  - `https://getdreamspell.com/privacy.html`
+- GitHub Pages temporary fallback URLs:
   - `https://ninjatomonline.github.io/dreamspell-site/`
   - `https://ninjatomonline.github.io/dreamspell-site/guide.html`
   - `https://ninjatomonline.github.io/dreamspell-site/glossary.html`
@@ -30,6 +39,7 @@ Use this template in a separate public GitHub repository so the Dreamspell app c
 - `robots.txt`
 - `sitemap.xml`
 - `site.webmanifest`
+- `CNAME`
 - favicon and touch icon PNGs
 - `screenshots/`
 - `.nojekyll`
@@ -45,13 +55,23 @@ Use this template in a separate public GitHub repository so the Dreamspell app c
 
 If the first workflow run fails with a `Get Pages site failed` or `Not Found` error, revisit `Settings > Pages` and save `Source: GitHub Actions` once. GitHub's `configure-pages` action can auto-enable Pages only when you provide a token stronger than the default `GITHUB_TOKEN`, so first-time repo enablement often remains a manual one-time setup step.
 
-## Later custom-domain swap
+## Custom domain: getdreamspell.com
 
-When your final domain is ready:
+This bundle includes a `CNAME` file with `getdreamspell.com`, but GitHub documents that `CNAME` files are ignored for Pages sites deployed from a custom GitHub Actions workflow. You still need to save the custom domain in `Settings > Pages`.
 
-1. Add a `CNAME` file in the repo root with the final domain name.
-2. Open the public repo on GitHub.
-3. Go to `Settings > Pages`.
-4. Enter the custom domain.
-5. Point the domain's DNS records at GitHub Pages.
-6. Turn on `Enforce HTTPS` after DNS propagation finishes.
+1. Open the public repo on GitHub.
+2. Go to `Settings > Pages`.
+3. Enter `getdreamspell.com` under `Custom domain` and save.
+4. In IONOS, add these apex `A` records for `@`:
+   - `185.199.108.153`
+   - `185.199.109.153`
+   - `185.199.110.153`
+   - `185.199.111.153`
+5. Optionally add these apex `AAAA` records:
+   - `2606:50c0:8000::153`
+   - `2606:50c0:8001::153`
+   - `2606:50c0:8002::153`
+   - `2606:50c0:8003::153`
+6. Add a `www` `CNAME` that points to `ninjatomonline.github.io`.
+7. Remove any conflicting default parking, forwarding, wildcard, or placeholder DNS records first.
+8. Turn on `Enforce HTTPS` after DNS propagation finishes.
