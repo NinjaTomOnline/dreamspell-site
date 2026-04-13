@@ -9,13 +9,20 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
+    const syncMenuState = () => {
+      document.body.classList.toggle("menu-open", toggle.checked);
+    };
+
     const closeMenu = () => {
       toggle.checked = false;
+      syncMenuState();
     };
 
     nav.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", closeMenu);
     });
+
+    toggle.addEventListener("change", syncMenuState);
 
     document.addEventListener("click", (event) => {
       if (!toggle.checked) {
@@ -47,5 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (typeof mediaQuery.addListener === "function") {
       mediaQuery.addListener(handleBreakpointChange);
     }
+
+    syncMenuState();
   });
 });

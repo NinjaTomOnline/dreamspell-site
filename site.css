@@ -39,6 +39,10 @@ body {
     linear-gradient(180deg, var(--bg-top) 0%, var(--bg) 52%, #040303 100%);
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 main {
   display: grid;
   gap: 24px;
@@ -141,6 +145,10 @@ img {
   gap: 10px;
 }
 
+.nav-backdrop {
+  display: none;
+}
+
 .nav-toggle-input {
   position: absolute;
   width: 1px;
@@ -167,6 +175,11 @@ img {
   font-weight: 700;
   cursor: pointer;
   user-select: none;
+}
+
+.nav-toggle:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 217, 114, 0.28);
 }
 
 .nav-toggle-text {
@@ -201,6 +214,12 @@ img {
   color: var(--text);
   border-color: var(--border);
   background: var(--surface-soft);
+}
+
+.nav a:focus-visible {
+  outline: none;
+  border-color: rgba(255, 217, 114, 0.28);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .hero,
@@ -729,6 +748,8 @@ li + li {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
     align-items: center;
+    position: sticky;
+    overflow: visible;
   }
 
   .nav-toggle {
@@ -738,14 +759,28 @@ li + li {
   }
 
   .topbar .nav {
-    display: none;
+    display: flex;
     grid-column: 1 / -1;
-    margin-top: 8px;
-    padding-top: 10px;
-    border-top: 1px solid var(--border);
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0 solid transparent;
     flex-direction: column;
     align-items: stretch;
     gap: 8px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-6px);
+    transition:
+      margin-top 0.18s ease,
+      padding-top 0.18s ease,
+      border-top-width 0.18s ease,
+      max-height 0.18s ease,
+      opacity 0.18s ease,
+      transform 0.18s ease,
+      visibility 0.18s ease;
   }
 
   .topbar .nav a {
@@ -756,6 +791,7 @@ li + li {
   .nav-toggle-input:checked + .nav-toggle {
     border-color: var(--border);
     background: var(--surface-soft);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
   }
 
   .nav-toggle-input:checked + .nav-toggle .nav-toggle-text-menu {
@@ -767,7 +803,14 @@ li + li {
   }
 
   .nav-toggle-input:checked ~ .nav {
-    display: flex;
+    margin-top: 8px;
+    padding-top: 10px;
+    border-top-width: 1px;
+    max-height: 520px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
   }
 
   .hero {
@@ -823,8 +866,55 @@ li + li {
     padding: 20px;
   }
 
-  .nav {
-    gap: 8px;
+  .topbar > .brand,
+  .topbar > .nav-toggle,
+  .topbar > .nav {
+    position: relative;
+    z-index: 1;
+  }
+
+  .topbar .nav {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+    margin-top: 0;
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    background: rgba(12, 10, 11, 0.97);
+    backdrop-filter: blur(24px);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+    gap: 10px;
+    max-height: min(520px, calc(100vh - 120px));
+    overflow: auto;
+    z-index: 3;
+  }
+
+  .nav-backdrop {
+    position: fixed;
+    inset: 0;
+    display: block;
+    background: rgba(3, 3, 4, 0.64);
+    backdrop-filter: blur(6px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.18s ease, visibility 0.18s ease;
+    z-index: 0;
+  }
+
+  .nav-toggle-input:checked ~ .nav {
+    margin-top: 0;
+    padding-top: 16px;
+    border-top-width: 1px;
+    transform: translateY(0);
+  }
+
+  .nav-toggle-input:checked ~ .nav-backdrop {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .nav a,
