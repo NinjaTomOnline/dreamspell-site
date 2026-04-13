@@ -141,6 +141,19 @@ img {
   gap: 10px;
 }
 
+.nav-toggle-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .nav-toggle {
   display: none;
   align-items: center;
@@ -153,10 +166,15 @@ img {
   font: inherit;
   font-weight: 700;
   cursor: pointer;
+  user-select: none;
 }
 
 .nav-toggle-text {
   font-size: 0.92rem;
+}
+
+.nav-toggle-text-close {
+  display: none;
 }
 
 .nav-toggle-icon {
@@ -713,11 +731,14 @@ li + li {
     align-items: center;
   }
 
-  html.nav-js-ready .nav-toggle {
+  .nav-toggle {
     display: inline-flex;
+    grid-column: 2;
+    justify-self: end;
   }
 
   .topbar .nav {
+    display: none;
     grid-column: 1 / -1;
     margin-top: 8px;
     padding-top: 10px;
@@ -732,11 +753,20 @@ li + li {
     border-radius: 18px;
   }
 
-  html.nav-js-ready .topbar .nav {
+  .nav-toggle-input:checked + .nav-toggle {
+    border-color: var(--border);
+    background: var(--surface-soft);
+  }
+
+  .nav-toggle-input:checked + .nav-toggle .nav-toggle-text-menu {
     display: none;
   }
 
-  html.nav-js-ready .topbar.is-nav-open .nav {
+  .nav-toggle-input:checked + .nav-toggle .nav-toggle-text-close {
+    display: inline;
+  }
+
+  .nav-toggle-input:checked ~ .nav {
     display: flex;
   }
 
