@@ -36,6 +36,7 @@ Use this template in a separate public GitHub repository so the Dreamspell app c
 - `privacy.html`
 - `404.html`
 - `site.css`
+- `site.js`
 - `robots.txt`
 - `sitemap.xml`
 - `site.webmanifest`

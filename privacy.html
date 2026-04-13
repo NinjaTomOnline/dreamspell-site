@@ -22,6 +22,7 @@
   <link rel="manifest" href="site.webmanifest">
   <title>Dreamspell Privacy Policy | iPhone and iPad</title>
   <link rel="stylesheet" href="site.css">
+  <script src="site.js" defer></script>
 </head>
 <body class="page-privacy">
   <div class="shell">
@@ -33,7 +34,11 @@
           <span>13 Moon calendar and kin guide</span>
         </div>
       </div>
-      <nav class="nav" aria-label="Primary">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation menu">
+        <span class="nav-toggle-text">Menu</span>
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="guide.html">Guide</a>
         <a href="glossary.html">Glossary</a>

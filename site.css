@@ -141,6 +141,35 @@ img {
   gap: 10px;
 }
 
+.nav-toggle {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.nav-toggle-text {
+  font-size: 0.92rem;
+}
+
+.nav-toggle-icon {
+  display: block;
+  width: 16px;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+  box-shadow:
+    0 -5px 0 currentColor,
+    0 5px 0 currentColor;
+}
+
 .nav a {
   padding: 10px 14px;
   border-radius: 999px;
@@ -669,15 +698,46 @@ li + li {
 }
 
 @media (max-width: 980px) {
-  .topbar,
   .section-header,
   .footer {
     grid-template-columns: 1fr;
   }
 
-  .topbar,
   .section-header {
     display: grid;
+  }
+
+  .topbar {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+  }
+
+  html.nav-js-ready .nav-toggle {
+    display: inline-flex;
+  }
+
+  .topbar .nav {
+    grid-column: 1 / -1;
+    margin-top: 8px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .topbar .nav a {
+    width: 100%;
+    border-radius: 18px;
+  }
+
+  html.nav-js-ready .topbar .nav {
+    display: none;
+  }
+
+  html.nav-js-ready .topbar.is-nav-open .nav {
+    display: flex;
   }
 
   .hero {
