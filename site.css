@@ -650,6 +650,18 @@ li + li {
     align-self: end;
   }
 
+  .page-get-app .callout-launch {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) auto;
+    align-items: end;
+    gap: 24px;
+  }
+
+  .page-get-app .callout-launch .button-row {
+    justify-content: flex-end;
+    align-self: end;
+  }
+
   .footer {
     grid-template-columns: 1.3fr 0.9fr 1fr;
     align-items: start;
@@ -677,12 +689,14 @@ li + li {
   }
 
   .page-home .callout-learning,
-  .page-home .callout-support {
+  .page-home .callout-support,
+  .page-get-app .callout-launch {
     grid-template-columns: 1fr;
   }
 
   .page-home .callout-learning .button-row,
-  .page-home .callout-support .button-row {
+  .page-home .callout-support .button-row,
+  .page-get-app .callout-launch .button-row {
     justify-content: flex-start;
   }
 
