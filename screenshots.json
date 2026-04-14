@@ -1,0 +1,174 @@
+{
+  "defaults": {
+    "webMaxLongEdge": 1200,
+    "tabletWebMaxLongEdge": 1500
+  },
+  "images": {
+    "dashboard": {
+      "source": "screenshots/iphone-dashboard-dark.png",
+      "alt": "Dreamspell dashboard showing today's kin, the Gregorian date, and the monthly calendar in dark mode.",
+      "maxLongEdge": 1200
+    },
+    "calendar": {
+      "source": "screenshots/iphone-calendar-dark.png",
+      "alt": "Dreamspell calendar view in dark mode showing the 13 Moon month grid and kin dates.",
+      "maxLongEdge": 1200
+    },
+    "explorer_selector": {
+      "source": "screenshots/iphone-explorer-selector-dark.png",
+      "alt": "Dreamspell Kin Explorer in dark mode with the circular kin selector and dark picker controls.",
+      "maxLongEdge": 1200
+    },
+    "course": {
+      "source": "screenshots/iphone-dreamspell-course-dark.png",
+      "alt": "Dreamspell course screen in dark mode with guided lessons for learning the system.",
+      "maxLongEdge": 1200
+    },
+    "context_course": {
+      "source": "screenshots/iphone-context-course-dark.png",
+      "alt": "Dreamspell context course in dark mode explaining what Dreamspell means and how to approach it respectfully.",
+      "maxLongEdge": 1200
+    },
+    "tones_reference": {
+      "source": "screenshots/iphone-tones-reference-dark.png",
+      "alt": "Dreamspell 13 Galactic Tones reference screen in dark mode.",
+      "maxLongEdge": 1200
+    },
+    "seals_reference": {
+      "source": "screenshots/iphone-seals-reference-dark.png",
+      "alt": "Dreamspell 20 Solar Seals reference screen in dark mode.",
+      "maxLongEdge": 1200
+    },
+    "journal": {
+      "source": "screenshots/iphone-journal-dark.png",
+      "alt": "Dreamspell Journal screen in dark mode with local reflection entries.",
+      "maxLongEdge": 1200
+    },
+    "resources": {
+      "source": "screenshots/iphone-resources-dark.png",
+      "alt": "Dreamspell Resources screen in dark mode with privacy, context, and study cards.",
+      "maxLongEdge": 1200
+    },
+    "ipad_explorer": {
+      "source": "screenshots/ipad13-explorer-dark.png",
+      "alt": "Dreamspell Kin Explorer on iPad in dark mode with the larger wheel layout.",
+      "maxLongEdge": 1500
+    }
+  },
+  "social": {
+    "index.html": "dashboard",
+    "guide.html": "course",
+    "glossary.html": "tones_reference",
+    "faq.html": "resources",
+    "get-app.html": "dashboard",
+    "updates.html": "dashboard",
+    "start-here.html": "context_course",
+    "why-dreamspell.html": "explorer_selector",
+    "support.html": "resources",
+    "privacy.html": "journal"
+  },
+  "homepageGallery": {
+    "groups": [
+      {
+        "journey": "Today",
+        "title": "Start with the kin of the day",
+        "description": "The fastest way into Dreamspell is to see today’s signature, the current Gregorian date, and the reflection context tied to the day.",
+        "cards": [
+          {
+            "image": "dashboard",
+            "device": "iPhone + Dark Mode",
+            "title": "Today’s kin at a glance",
+            "description": "Open the app to see the current kin, Gregorian date, lunar phase, and daily reflection context in one place.",
+            "featured": true,
+            "loading": "eager"
+          }
+        ]
+      },
+      {
+        "journey": "Navigate",
+        "title": "Move through the 13 Moon year",
+        "description": "The calendar view helps people move from dates into rhythm, so the 13-Moon year and the Tzolkin stop feeling abstract.",
+        "cards": [
+          {
+            "image": "calendar",
+            "device": "iPhone + Dark Mode",
+            "title": "13 Moon calendar study",
+            "description": "Browse the 13-Moon year, inspect kin by date, and move between calendar timing and the deeper Tzolkin study rhythm.",
+            "loading": "lazy"
+          }
+        ]
+      },
+      {
+        "journey": "Explore",
+        "title": "Inspect how a kin comes together",
+        "description": "Kin Explorer is where tones, seals, and combinations become interactive instead of theoretical.",
+        "cards": [
+          {
+            "image": "explorer_selector",
+            "device": "iPhone + Dark Mode",
+            "title": "Kin Explorer with the current dark controls",
+            "description": "The selector capture shows the current dark picker styling and the kin wheel layout people use to study tones, seals, and relationships inside the app.",
+            "featured": true,
+            "loading": "eager"
+          }
+        ]
+      },
+      {
+        "journey": "Learn",
+        "title": "Study the system with guided lessons and references",
+        "description": "The app teaches through both guided Dreamspell lessons and dedicated reference screens for tones and seals.",
+        "cards": [
+          {
+            "image": "course",
+            "device": "iPhone + Dark Mode",
+            "title": "Dreamspell Course as guided study",
+            "description": "The in-app course walks lesson by lesson through Dreamspell basics and clearly frames the app as Dreamspell study.",
+            "loading": "lazy"
+          },
+          {
+            "image": "tones_reference",
+            "device": "iPhone + Dark Mode",
+            "title": "13 Galactic Tones as a study screen",
+            "description": "Each tone gets its own explanation, keywords, and summary so the rhythm of the 13-tone sequence is easy to study inside the app.",
+            "loading": "lazy"
+          },
+          {
+            "image": "seals_reference",
+            "device": "iPhone + Dark Mode",
+            "title": "20 Solar Seals as the matching reference path",
+            "description": "The seal guide complements the tones screen so people can learn both halves of a kin signature before moving deeper into the glossary.",
+            "loading": "lazy"
+          }
+        ]
+      },
+      {
+        "journey": "Reflect",
+        "title": "Keep notes tied to your practice",
+        "description": "Reflection stays local to the device in the current release, making journaling part of the study flow instead of a separate tool.",
+        "cards": [
+          {
+            "image": "journal",
+            "device": "iPhone + Dark Mode",
+            "title": "Private journal reflections",
+            "description": "Capture dated notes tied to your Dreamspell practice while keeping journal entries local to the device in the current release.",
+            "loading": "lazy"
+          }
+        ]
+      },
+      {
+        "journey": "Study on iPad",
+        "title": "Open the same ideas on a wider canvas",
+        "description": "The iPad layout gives the Explorer more room and makes ongoing study feel more spacious on larger screens.",
+        "cards": [
+          {
+            "image": "ipad_explorer",
+            "device": "iPad + Dark Mode",
+            "title": "Wider-screen kin exploration",
+            "description": "The iPad layout carries the same modern dark presentation into a roomier Kin Explorer screen, giving the wheel and controls more space to breathe.",
+            "loading": "lazy"
+          }
+        ]
+      }
+    ]
+  }
+}

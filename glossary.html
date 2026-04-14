@@ -12,11 +12,13 @@
   <meta property="og:title" content="Dreamspell Glossary | Tones, seals, and moons">
   <meta property="og:description" content="Browse the Dreamspell vocabulary used throughout the app, including the 13 tones, 20 seals, and 13 Moon calendar names.">
   <meta property="og:url" content="https://getdreamspell.com/glossary.html">
-  <meta property="og:image" content="https://getdreamspell.com/screenshots/iphone-tones-reference-dark.png">
+  <meta property="og:image" content="https://getdreamspell.com/screenshots/web/iphone-tones-reference-dark.png">
+  <meta property="og:image:width" content="553">
+  <meta property="og:image:height" content="1200">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Dreamspell Glossary | Tones, seals, and moons">
   <meta name="twitter:description" content="Browse the Dreamspell vocabulary used throughout the app, including the 13 tones, 20 seals, and 13 Moon calendar names.">
-  <meta name="twitter:image" content="https://getdreamspell.com/screenshots/iphone-tones-reference-dark.png">
+  <meta name="twitter:image" content="https://getdreamspell.com/screenshots/web/iphone-tones-reference-dark.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
@@ -60,6 +62,7 @@
           <h1>Learn the words the app uses, one tone, seal, and moon at a time.</h1>
           <p class="lede">This glossary gives you a plain-language reference for the main Dreamspell vocabulary used across the site and inside the app, so you can move from curiosity into actual understanding without guessing what the terms mean.</p>
           <div class="button-row">
+            <a class="button secondary" href="start-here.html">Start Here</a>
             <a class="button primary" href="#tones">13 Tones</a>
             <a class="button secondary" href="#seals">20 Seals</a>
             <a class="button secondary" href="#moons">13 Moons</a>
@@ -89,7 +92,46 @@
         </aside>
       </section>
 
-      <section class="section">
+      <section class="section" data-glossary-search>
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Search The Glossary</p>
+            <h2>Jump straight to the Dreamspell term you want</h2>
+          </div>
+          <p>Search by word or tap a filter to narrow the glossary to tones, seals, moons, kin, or wavespell language.</p>
+        </div>
+        <div class="search-panel">
+          <div class="search-layout">
+            <div class="search-field">
+              <label for="glossary-search">Search terms</label>
+              <input class="search-input" id="glossary-search" data-glossary-input type="search" name="glossary-search" placeholder="Try tone, seal, moon, kin, wavespell, Skywalker, or Magnetic">
+            </div>
+            <div class="search-field">
+              <span class="search-label">Filter by type</span>
+              <div class="chip-row" role="group" aria-label="Glossary filters">
+                <button class="chip-button" type="button" data-glossary-filter="all" aria-pressed="true">All Terms</button>
+                <button class="chip-button" type="button" data-glossary-filter="tone" aria-pressed="false">Tones</button>
+                <button class="chip-button" type="button" data-glossary-filter="seal" aria-pressed="false">Seals</button>
+                <button class="chip-button" type="button" data-glossary-filter="moon" aria-pressed="false">Moons</button>
+                <button class="chip-button" type="button" data-glossary-filter="kin" aria-pressed="false">Kin</button>
+                <button class="chip-button" type="button" data-glossary-filter="wavespell" aria-pressed="false">Wavespell</button>
+              </div>
+            </div>
+          </div>
+          <div class="glossary-status" aria-live="polite">
+            <p class="small glossary-result-meta" data-glossary-result-count>0 matching terms</p>
+            <p class="small glossary-empty" data-glossary-empty hidden>No matching term yet. Try a broader word or switch filters.</p>
+          </div>
+          <div class="button-row">
+            <a class="button secondary" href="#tones">Jump to tones</a>
+            <a class="button secondary" href="#seals">Jump to seals</a>
+            <a class="button secondary" href="#moons">Jump to moons</a>
+            <a class="button secondary" href="guide.html#tzolkin-and-kin">Kin meaning in the guide</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="glossary-quick-start" data-glossary-section="reference">
         <div class="section-header">
           <div>
             <p class="eyebrow">Quick Reference</p>
@@ -98,26 +140,26 @@
           <p>If you only want the shortest version: tones describe movement, seals describe quality, kin combines them, and the moons give the annual rhythm.</p>
         </div>
         <div class="grid">
-          <article class="card span-3">
+          <article class="card span-3" data-glossary-entry data-glossary-kind="kin" data-glossary-search="kin daily signature tone seal">
             <h3>Kin</h3>
             <p>A kin is one daily signature formed by a galactic tone and a solar seal.</p>
           </article>
-          <article class="card span-3">
+          <article class="card span-3" data-glossary-entry data-glossary-kind="kin" data-glossary-search="tzolkin 260 day cycle kin">
             <h3>Tzolkin</h3>
             <p>The Tzolkin is the 260-day cycle created by combining 13 tones with 20 seals.</p>
           </article>
-          <article class="card span-3">
+          <article class="card span-3" data-glossary-entry data-glossary-kind="wavespell" data-glossary-search="wavespell 13 day arc tones">
             <h3>Wavespell</h3>
             <p>A wavespell is the 13-day arc created by moving through all thirteen tones in sequence.</p>
           </article>
-          <article class="card span-3">
+          <article class="card span-3" data-glossary-entry data-glossary-kind="moon" data-glossary-search="13 moon year annual rhythm">
             <h3>13 Moon year</h3>
             <p>The Dreamspell year is commonly studied as thirteen 28-day moons with their own named rhythm.</p>
           </article>
         </div>
       </section>
 
-      <section class="section" id="tones">
+      <section class="section" id="tones" data-glossary-section="tone">
         <div class="section-header">
           <div>
             <p class="eyebrow">13 Galactic Tones</p>
@@ -233,7 +275,7 @@
         </div>
       </section>
 
-      <section class="section" id="seals">
+      <section class="section" id="seals" data-glossary-section="seal">
         <div class="section-header">
           <div>
             <p class="eyebrow">20 Solar Seals</p>
@@ -425,7 +467,7 @@
         </div>
       </section>
 
-      <section class="section" id="moons">
+      <section class="section" id="moons" data-glossary-section="moon">
         <div class="section-header">
           <div>
             <p class="eyebrow">13 Moons</p>
@@ -528,6 +570,42 @@
         </div>
       </section>
 
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Next Step</p>
+            <h2>Turn the glossary into a learning path</h2>
+          </div>
+          <p>Once the words start to click, these are the best pages to deepen the picture and turn vocabulary into actual Dreamspell understanding.</p>
+        </div>
+        <div class="learning-grid">
+          <article class="card span-3 learning-card">
+            <span class="learning-kicker">Beginner Path</span>
+            <h3>Start Here</h3>
+            <p>Move through Dreamspell in the cleanest order: what it is, 13 Moons, Tzolkin, kin, tones, seals, and then the app.</p>
+            <a class="button secondary" href="start-here.html">Open Start Here</a>
+          </article>
+          <article class="card span-3 learning-card">
+            <span class="learning-kicker">Big Picture</span>
+            <h3>Why Dreamspell?</h3>
+            <p>Read the beginner-friendly explainer on why people use Dreamspell and how the app helps without stretching the product promise.</p>
+            <a class="button secondary" href="why-dreamspell.html">Read Why Dreamspell</a>
+          </article>
+          <article class="card span-3 learning-card">
+            <span class="learning-kicker">Full Guide</span>
+            <h3>Guide</h3>
+            <p>Use the long-form guide when you want the 13 Moon year, the Tzolkin, wavespells, and app flow explained in one pass.</p>
+            <a class="button secondary" href="guide.html">Open Guide</a>
+          </article>
+          <article class="card span-3 learning-card">
+            <span class="learning-kicker">App Path</span>
+            <h3>Get App</h3>
+            <p>Keep the launch-status page bookmarked so you can move from study pages into the app the moment the listing is live again.</p>
+            <a class="button secondary" href="get-app.html">Open Get App</a>
+          </article>
+        </div>
+      </section>
+
       <section class="callout callout-support">
         <div>
           <p class="eyebrow">Keep Learning</p>
@@ -535,6 +613,7 @@
           <p>The guide explains how tones, seals, kin, and the 13 Moon year fit together, while the app gives you the day-by-day experience in one place.</p>
         </div>
         <div class="button-row">
+          <a class="button secondary" href="start-here.html">Start Here</a>
           <a class="button primary" href="guide.html">Guide</a>
           <a class="button secondary" href="get-app.html">Get App</a>
           <a class="button secondary" href="updates.html">What’s New</a>
