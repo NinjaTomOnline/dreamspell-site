@@ -14,6 +14,7 @@ Use this template in a separate public GitHub repository so the Dreamspell app c
   - `https://getdreamspell.com/updates.html`
   - `https://getdreamspell.com/start-here.html`
   - `https://getdreamspell.com/why-dreamspell.html`
+  - `https://getdreamspell.com/kin-meaning.html`
   - `https://getdreamspell.com/support.html`
   - `https://getdreamspell.com/privacy.html`
 - GitHub Pages temporary fallback URLs:
@@ -25,6 +26,7 @@ Use this template in a separate public GitHub repository so the Dreamspell app c
   - `https://ninjatomonline.github.io/dreamspell-site/updates.html`
   - `https://ninjatomonline.github.io/dreamspell-site/start-here.html`
   - `https://ninjatomonline.github.io/dreamspell-site/why-dreamspell.html`
+  - `https://ninjatomonline.github.io/dreamspell-site/kin-meaning.html`
   - `https://ninjatomonline.github.io/dreamspell-site/support.html`
   - `https://ninjatomonline.github.io/dreamspell-site/privacy.html`
 
@@ -38,11 +40,13 @@ Use this template in a separate public GitHub repository so the Dreamspell app c
 - `updates.html`
 - `start-here.html`
 - `why-dreamspell.html`
+- `kin-meaning.html`
 - `support.html`
 - `privacy.html`
 - `404.html`
 - `site.css`
 - `site.js`
+- `app-store-badge.svg`
 - `screenshots.json`
 - `robots.txt`
 - `sitemap.xml`
