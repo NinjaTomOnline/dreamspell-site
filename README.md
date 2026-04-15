@@ -60,17 +60,25 @@ Use this template in a separate public GitHub repository so the Dreamspell app c
 - `updates.html`
 - `start-here.html`
 - `why-dreamspell.html`
+- `dreamspell-annual-cycle.html`
 - `13-moon-calendar-meaning.html`
 - `moon-meaning.html`
 - `day-out-of-time-meaning.html`
 - `dreamspell-new-year-meaning.html`
 - `dreamspell-year-bearer-meaning.html`
 - `july-26-new-year-meaning.html`
+- `year-bearer-colors.html`
+- `year-bearer-kin.html`
 - `tzolkin-meaning.html`
 - `galactic-tones-meaning.html`
 - `solar-seals-meaning.html`
 - `kin-meaning.html`
 - `wavespell-meaning.html`
+- `dreamspell-and-traditional-maya-calendars.html`
+- `concept-index.html`
+- `daily-practice.html`
+- `tzolkin-relationship.html`
+- `release-archive.html`
 - `support.html`
 - `privacy.html`
 - `404.html`
@@ -88,6 +96,7 @@ Use this template in a separate public GitHub repository so the Dreamspell app c
 - `.github/workflows/publish-pages.yml`
 
 `app-store-badge.svg` should remain the Apple-provided App Store marketing badge artwork rather than a custom imitation.
+The exported `screenshots/web/` directory should include resized PNG fallbacks plus modern `WebP` and `AVIF` variants generated from the hosted-site screenshot manifest.
 
 ## Setup
 
