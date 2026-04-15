@@ -49,6 +49,11 @@
       "alt": "Dreamspell Resources screen in dark mode with privacy, context, and study cards.",
       "maxLongEdge": 1200
     },
+    "annual_transition": {
+      "source": "screenshots/annual-transition-share.png",
+      "alt": "Dreamspell annual transition diagram showing 13 Moons, the Day Out of Time, and the Dreamspell new year on July 26.",
+      "maxLongEdge": 1200
+    },
     "ipad_explorer": {
       "source": "screenshots/ipad13-explorer-dark.png",
       "alt": "Dreamspell Kin Explorer on iPad in dark mode with the larger wheel layout.",
@@ -61,10 +66,11 @@
     "glossary.html": "tones_reference",
     "faq.html": "resources",
     "get-app.html": "dashboard",
-    "13-moon-calendar-meaning.html": "calendar",
+    "13-moon-calendar-meaning.html": "annual_transition",
     "moon-meaning.html": "calendar",
-    "day-out-of-time-meaning.html": "calendar",
-    "july-26-new-year-meaning.html": "calendar",
+    "day-out-of-time-meaning.html": "annual_transition",
+    "dreamspell-new-year-meaning.html": "annual_transition",
+    "july-26-new-year-meaning.html": "annual_transition",
     "tzolkin-meaning.html": "calendar",
     "galactic-tones-meaning.html": "tones_reference",
     "solar-seals-meaning.html": "seals_reference",
