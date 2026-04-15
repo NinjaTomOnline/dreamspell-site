@@ -16,6 +16,7 @@ Use this template in a separate public GitHub repository so the Dreamspell app c
   - `https://getdreamspell.com/why-dreamspell.html`
   - `https://getdreamspell.com/13-moon-calendar-meaning.html`
   - `https://getdreamspell.com/galactic-tones-meaning.html`
+  - `https://getdreamspell.com/solar-seals-meaning.html`
   - `https://getdreamspell.com/kin-meaning.html`
   - `https://getdreamspell.com/support.html`
   - `https://getdreamspell.com/privacy.html`
@@ -30,6 +31,7 @@ Use this template in a separate public GitHub repository so the Dreamspell app c
   - `https://ninjatomonline.github.io/dreamspell-site/why-dreamspell.html`
   - `https://ninjatomonline.github.io/dreamspell-site/13-moon-calendar-meaning.html`
   - `https://ninjatomonline.github.io/dreamspell-site/galactic-tones-meaning.html`
+  - `https://ninjatomonline.github.io/dreamspell-site/solar-seals-meaning.html`
   - `https://ninjatomonline.github.io/dreamspell-site/kin-meaning.html`
   - `https://ninjatomonline.github.io/dreamspell-site/support.html`
   - `https://ninjatomonline.github.io/dreamspell-site/privacy.html`
@@ -46,6 +48,7 @@ Use this template in a separate public GitHub repository so the Dreamspell app c
 - `why-dreamspell.html`
 - `13-moon-calendar-meaning.html`
 - `galactic-tones-meaning.html`
+- `solar-seals-meaning.html`
 - `kin-meaning.html`
 - `support.html`
 - `privacy.html`
