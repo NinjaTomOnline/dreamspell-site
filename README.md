@@ -18,6 +18,7 @@ Use this template in a separate public GitHub repository so the Dreamspell app c
   - `https://getdreamspell.com/galactic-tones-meaning.html`
   - `https://getdreamspell.com/solar-seals-meaning.html`
   - `https://getdreamspell.com/kin-meaning.html`
+  - `https://getdreamspell.com/wavespell-meaning.html`
   - `https://getdreamspell.com/support.html`
   - `https://getdreamspell.com/privacy.html`
 - GitHub Pages temporary fallback URLs:
@@ -33,6 +34,7 @@ Use this template in a separate public GitHub repository so the Dreamspell app c
   - `https://ninjatomonline.github.io/dreamspell-site/galactic-tones-meaning.html`
   - `https://ninjatomonline.github.io/dreamspell-site/solar-seals-meaning.html`
   - `https://ninjatomonline.github.io/dreamspell-site/kin-meaning.html`
+  - `https://ninjatomonline.github.io/dreamspell-site/wavespell-meaning.html`
   - `https://ninjatomonline.github.io/dreamspell-site/support.html`
   - `https://ninjatomonline.github.io/dreamspell-site/privacy.html`
 
@@ -50,6 +52,7 @@ Use this template in a separate public GitHub repository so the Dreamspell app c
 - `galactic-tones-meaning.html`
 - `solar-seals-meaning.html`
 - `kin-meaning.html`
+- `wavespell-meaning.html`
 - `support.html`
 - `privacy.html`
 - `404.html`

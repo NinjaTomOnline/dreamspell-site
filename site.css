@@ -560,6 +560,46 @@ li + li {
   gap: 18px;
 }
 
+.intent-strip {
+  display: grid;
+  gap: 14px;
+  padding: 20px 24px;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02)),
+    rgba(13, 10, 11, 0.92);
+}
+
+.intent-strip-label {
+  margin: 0;
+  color: #ffe39c;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.intent-strip-copy {
+  margin: 0;
+  color: var(--muted);
+  max-width: 48rem;
+}
+
+.intent-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.intent-link.is-current,
+.intent-link[aria-current="page"] {
+  border-color: rgba(255, 217, 114, 0.34);
+  background: rgba(255, 217, 114, 0.12);
+  color: #fff4ca;
+  box-shadow: inset 0 0 0 1px rgba(255, 217, 114, 0.12);
+}
+
 .learning-card {
   position: relative;
   overflow: hidden;
@@ -1177,6 +1217,10 @@ li + li {
   .nav a,
   .button {
     width: 100%;
+  }
+
+  .intent-links .button {
+    justify-content: flex-start;
   }
 
   .button-row {
