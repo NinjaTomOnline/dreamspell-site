@@ -1,0 +1,121 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Dreamspell annual cycle map</title>
+  <desc id="desc">A visual diagram showing the yearly Dreamspell path from 13 Moons to the Day Out of Time, then July 26 New Year, and finally the Year Bearer.</desc>
+  <defs>
+    <linearGradient id="bg" x1="120" y1="40" x2="1080" y2="590" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#171112"/>
+      <stop offset="1" stop-color="#0A0809"/>
+    </linearGradient>
+    <radialGradient id="glowGold" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(235 112) rotate(63.192) scale(408.09 649.268)">
+      <stop stop-color="#FFD972" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#FFD972" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowBlue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(998 486) rotate(150.829) scale(352.537 500.771)">
+      <stop stop-color="#3E98E5" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#3E98E5" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line" x1="192" y1="324" x2="1004" y2="324" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D7B66A" stop-opacity="0.28"/>
+      <stop offset="0.5" stop-color="#FFD972" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#3E98E5" stop-opacity="0.34"/>
+    </linearGradient>
+    <linearGradient id="cardStroke" x1="150" y1="206" x2="1050" y2="494" gradientUnits="userSpaceOnUse">
+      <stop stop-color="rgba(255,255,255,0.22)"/>
+      <stop offset="0.55" stop-color="rgba(255,217,114,0.22)"/>
+      <stop offset="1" stop-color="rgba(62,152,229,0.12)"/>
+    </linearGradient>
+    <filter id="shadow" x="108" y="170" width="984" height="344" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="24"/>
+      <feGaussianBlur stdDeviation="20"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.38 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1" result="shape"/>
+    </filter>
+    <style>
+      .label { fill: #FFE39C; font: 800 14px "Arial", "Helvetica Neue", sans-serif; letter-spacing: 0.12em; text-transform: uppercase; }
+      .title { fill: #FBF4E8; font: 800 26px "Arial Narrow", "Arial", "Helvetica Neue", sans-serif; letter-spacing: -0.03em; }
+      .copy { fill: #CFC2B6; font: 500 15px "Arial", "Helvetica Neue", sans-serif; }
+      .stepNum { fill: #FFF4CA; font: 800 17px "Arial", "Helvetica Neue", sans-serif; }
+      .eyebrow { fill: #D9B15C; font: 800 13px "Arial", "Helvetica Neue", sans-serif; letter-spacing: 0.16em; text-transform: uppercase; }
+      .heroTitle { fill: #FBF4E8; font: 800 48px "Arial Narrow", "Arial", "Helvetica Neue", sans-serif; letter-spacing: -0.05em; }
+      .heroCopy { fill: #D1C7BC; font: 500 19px "Arial", "Helvetica Neue", sans-serif; }
+      .chip { fill: #F2E1B0; font: 700 13px "Arial", "Helvetica Neue", sans-serif; }
+      .footerCopy { fill: #B7AB9C; font: 600 14px "Arial", "Helvetica Neue", sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="630" rx="36" fill="url(#bg)"/>
+  <rect width="1200" height="630" rx="36" fill="url(#glowGold)"/>
+  <rect width="1200" height="630" rx="36" fill="url(#glowBlue)"/>
+
+  <g opacity="0.92">
+    <text x="86" y="78" class="eyebrow">Dreamspell annual cycle</text>
+    <text x="84" y="132" class="heroTitle">13 Moons -> Day Out of Time -> July 26 New Year -> Year Bearer</text>
+    <text x="86" y="170" class="heroCopy">One yearly map for the Dreamspell branch that most beginners need first, from the counted year to the yearly signature language.</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <line x1="190" y1="324" x2="1010" y2="324" stroke="url(#line)" stroke-width="3" stroke-linecap="round"/>
+
+    <g transform="translate(118 204)">
+      <rect x="0" y="0" width="210" height="230" rx="28" fill="#120E0F"/>
+      <rect x="0.5" y="0.5" width="209" height="229" rx="27.5" stroke="url(#cardStroke)" stroke-opacity="0.55"/>
+      <circle cx="32" cy="38" r="22" fill="#22191B" stroke="#E1BB68" stroke-opacity="0.45"/>
+      <text x="25" y="44" class="stepNum">1</text>
+      <text x="24" y="84" class="label">Yearly frame</text>
+      <text x="24" y="122" class="title">13 Moons</text>
+      <text x="24" y="152" class="copy">364 counted days</text>
+      <text x="24" y="184" class="copy">The repeating annual</text>
+      <text x="24" y="205" class="copy">structure behind the</text>
+      <text x="24" y="226" class="copy">Dreamspell year.</text>
+    </g>
+
+    <g transform="translate(366 204)">
+      <rect x="0" y="0" width="210" height="230" rx="28" fill="#120E0F"/>
+      <rect x="0.5" y="0.5" width="209" height="229" rx="27.5" stroke="url(#cardStroke)" stroke-opacity="0.55"/>
+      <circle cx="32" cy="38" r="22" fill="#22191B" stroke="#E1BB68" stroke-opacity="0.45"/>
+      <text x="25" y="44" class="stepNum">2</text>
+      <text x="24" y="84" class="label">Threshold day</text>
+      <text x="24" y="122" class="title">Day Out of Time</text>
+      <text x="24" y="152" class="copy">July 25 pause</text>
+      <text x="24" y="184" class="copy">The bridge between</text>
+      <text x="24" y="205" class="copy">counted years before</text>
+      <text x="24" y="226" class="copy">the next opening.</text>
+    </g>
+
+    <g transform="translate(614 204)">
+      <rect x="0" y="0" width="210" height="230" rx="28" fill="#120E0F"/>
+      <rect x="0.5" y="0.5" width="209" height="229" rx="27.5" stroke="url(#cardStroke)" stroke-opacity="0.55"/>
+      <circle cx="32" cy="38" r="22" fill="#22191B" stroke="#E1BB68" stroke-opacity="0.45"/>
+      <text x="25" y="44" class="stepNum">3</text>
+      <text x="24" y="84" class="label">Annual opening</text>
+      <text x="24" y="122" class="title">July 26 New Year</text>
+      <text x="24" y="152" class="copy">Next annual cycle</text>
+      <text x="24" y="184" class="copy">The yearly restart</text>
+      <text x="24" y="205" class="copy">that follows the</text>
+      <text x="24" y="226" class="copy">threshold day.</text>
+    </g>
+
+    <g transform="translate(862 204)">
+      <rect x="0" y="0" width="220" height="230" rx="28" fill="#120E0F"/>
+      <rect x="0.5" y="0.5" width="219" height="229" rx="27.5" stroke="url(#cardStroke)" stroke-opacity="0.55"/>
+      <circle cx="32" cy="38" r="22" fill="#22191B" stroke="#7DBAF0" stroke-opacity="0.52"/>
+      <text x="25" y="44" class="stepNum">4</text>
+      <text x="24" y="84" class="label">Year signature</text>
+      <text x="24" y="122" class="title">Year Bearer</text>
+      <text x="24" y="152" class="copy">Kin language for the year</text>
+      <text x="24" y="184" class="copy">The yearly shorthand</text>
+      <text x="24" y="205" class="copy">people use once the</text>
+      <text x="24" y="226" class="copy">new annual cycle opens.</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="84" y="536" width="162" height="36" rx="18" fill="rgba(255,217,114,0.12)" stroke="rgba(255,217,114,0.28)"/>
+    <text x="107" y="559" class="chip">13 Moon learning path</text>
+    <text x="280" y="559" class="footerCopy">Study the annual branch on getdreamspell.com or in the Dreamspell app for iPhone and iPad.</text>
+  </g>
+</svg>
