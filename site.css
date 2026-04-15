@@ -560,6 +560,34 @@ li + li {
   gap: 18px;
 }
 
+.intent-breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0 4px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.intent-breadcrumbs a {
+  color: var(--muted);
+}
+
+.intent-breadcrumbs a:hover {
+  color: var(--text);
+}
+
+.intent-breadcrumbs-separator {
+  color: rgba(255, 255, 255, 0.28);
+}
+
+.intent-breadcrumbs-current {
+  color: var(--text);
+  font-weight: 700;
+}
+
 .intent-strip {
   display: grid;
   gap: 14px;
