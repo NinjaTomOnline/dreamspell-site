@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://getdreamspell.com/sitemap.xml
+Sitemap: https://dreamspell.app/sitemap.xml
